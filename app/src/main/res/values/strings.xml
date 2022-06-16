@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Assessment3Activity</string>
+    <string name="numbOne_Error">Number is Required</string>
+    <string name="numbTwo_Error">Number is Required</string>
+    <string name="numbOne_Error">Number is Required</string>
+    <string name="numbTwo_Error">Number is Required</string>
+    <string name="numbOne_Error">Number is Required</string>
+    <string name="numbTwo_Error">Number is Required</string>
+    <string name="numbOne_Error">Number is Required</string>
+    <string name="numbTwo_Error">Number is Required</string>
 </resources>

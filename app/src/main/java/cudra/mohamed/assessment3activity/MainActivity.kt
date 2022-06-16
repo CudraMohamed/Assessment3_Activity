@@ -44,14 +44,14 @@ class MainActivity : AppCompatActivity() {
             val numbTwo=etNumbTwo.toString()
 
             if (numbOne.isBlank()){
-                tilNumbOne.error="Number is Required"
+                tilNumbOne.error=getString(R.string.numbOne_Error)
                 return@setOnClickListener
             }
             if (numbTwo.isBlank()){
-                tilNumbTwo.error="Number is Required"
+                tilNumbTwo.error=getString(R.string.numbTwo_Error)
                 return@setOnClickListener
             }
-            addition(numbOne.toInt(),numbTwo.toInt())
+            addition(numbOne.toDouble(),numbTwo.toDouble())
         }
         btnSubtract.setOnClickListener {
             tvResults.text=""
@@ -59,14 +59,14 @@ class MainActivity : AppCompatActivity() {
             val numbTwo=etNumbTwo.toString()
 
             if (numbOne.isBlank()){
-                tilNumbOne.error="Number is Required"
+                tilNumbOne.error=getString(R.string.numbOne_Error)
                 return@setOnClickListener
             }
             if (numbTwo.isBlank()){
-                tilNumbTwo.error="Number is Required"
+                tilNumbTwo.error=getString(R.string.numbTwo_Error)
                 return@setOnClickListener
             }
-            subtraction(numbOne.toInt(),numbTwo.toInt())
+            subtraction(numbOne.toDouble(),numbTwo.toDouble())
         }
         btnModulus.setOnClickListener {
             tvResults.text=""
@@ -74,14 +74,14 @@ class MainActivity : AppCompatActivity() {
             val numbTwo=etNumbTwo.toString()
 
             if (numbOne.isBlank()){
-                tilNumbOne.error="Number is Required"
+                tilNumbOne.error=getString(R.string.numbOne_Error)
                 return@setOnClickListener
             }
             if (numbTwo.isBlank()){
-                tilNumbTwo.error="Number is Required"
+                tilNumbTwo.error=getString(R.string.numbTwo_Error)
                 return@setOnClickListener
             }
-            moduluss(numbOne.toInt(),numbTwo.toInt())
+            moduluss(numbOne.toDouble(),numbTwo.toDouble())
         }
         btnDivision.setOnClickListener {
             tvResults.text=""
@@ -89,29 +89,29 @@ class MainActivity : AppCompatActivity() {
             val numbTwo=etNumbTwo.toString()
 
             if (numbOne.isBlank()){
-                tilNumbOne.error="Number is Required"
+                tilNumbOne.error=getString(R.string.numbOne_Error)
                 return@setOnClickListener
             }
             if (numbTwo.isBlank()){
-                tilNumbTwo.error="Number is Required"
+                tilNumbTwo.error=getString(R.string.numbTwo_Error)
                 return@setOnClickListener
             }
-            division(numbOne.toInt(),numbTwo.toInt())
+            division(numbOne.toDouble(),numbTwo.toDouble())
         }
     }
-    fun addition(etNumbOne:Int,etNumbTwo:Int){
+    fun addition(etNumbOne:Double,etNumbTwo:Double){
         var sum=etNumbOne + etNumbTwo
         tvResults.text=sum.toString()
     }
-    fun subtraction(etNumbOne:Int,etNumbTwo:Int){
+    fun subtraction(etNumbOne:Double,etNumbTwo:Double){
         var subtract=etNumbOne - etNumbTwo
         tvResults.text=subtract.toString()
     }
-    fun moduluss(etNumbOne:Int,etNumbTwo:Int){
+    fun moduluss(etNumbOne:Double,etNumbTwo:Double){
         var modulus=etNumbOne % etNumbTwo
         tvResults.text=modulus.toString()
     }
-    fun division(etNumbOne:Int,etNumbTwo:Int){
+    fun division(etNumbOne:Double,etNumbTwo:Double){
         var divide=etNumbOne / etNumbTwo
         tvResults.text=divide.toString()
     }
