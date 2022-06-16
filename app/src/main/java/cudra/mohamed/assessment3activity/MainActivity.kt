@@ -44,11 +44,11 @@ class MainActivity : AppCompatActivity() {
             val numbTwo=etNumbTwo.toString()
 
             if (numbOne.isBlank()){
-                tilNumbOne.error=getString(R.string.numbOne_Error)
+                tilNumbOne.error=getString(R.string.numbOneAdd_Error)
                 return@setOnClickListener
             }
             if (numbTwo.isBlank()){
-                tilNumbTwo.error=getString(R.string.numbTwo_Error)
+                tilNumbTwo.error=getString(R.string.numbTwoAdd_Error)
                 return@setOnClickListener
             }
             addition(numbOne.toDouble(),numbTwo.toDouble())
@@ -59,11 +59,11 @@ class MainActivity : AppCompatActivity() {
             val numbTwo=etNumbTwo.toString()
 
             if (numbOne.isBlank()){
-                tilNumbOne.error=getString(R.string.numbOne_Error)
+                tilNumbOne.error=getString(R.string.numbOneSubtract_Error)
                 return@setOnClickListener
             }
             if (numbTwo.isBlank()){
-                tilNumbTwo.error=getString(R.string.numbTwo_Error)
+                tilNumbTwo.error=getString(R.string.numbTwoSubtract_Error)
                 return@setOnClickListener
             }
             subtraction(numbOne.toDouble(),numbTwo.toDouble())
@@ -74,11 +74,11 @@ class MainActivity : AppCompatActivity() {
             val numbTwo=etNumbTwo.toString()
 
             if (numbOne.isBlank()){
-                tilNumbOne.error=getString(R.string.numbOne_Error)
+                tilNumbOne.error=getString(R.string.numbOneModulus_Error)
                 return@setOnClickListener
             }
             if (numbTwo.isBlank()){
-                tilNumbTwo.error=getString(R.string.numbTwo_Error)
+                tilNumbTwo.error=getString(R.string.numbTwoModulus_Error)
                 return@setOnClickListener
             }
             moduluss(numbOne.toDouble(),numbTwo.toDouble())
@@ -89,11 +89,11 @@ class MainActivity : AppCompatActivity() {
             val numbTwo=etNumbTwo.toString()
 
             if (numbOne.isBlank()){
-                tilNumbOne.error=getString(R.string.numbOne_Error)
+                tilNumbOne.error=getString(R.string.numbOneDivision_Error)
                 return@setOnClickListener
             }
             if (numbTwo.isBlank()){
-                tilNumbTwo.error=getString(R.string.numbTwo_Error)
+                tilNumbTwo.error=getString(R.string.numbTwoDivision_Error)
                 return@setOnClickListener
             }
             division(numbOne.toDouble(),numbTwo.toDouble())
